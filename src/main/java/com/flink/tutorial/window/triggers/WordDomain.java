@@ -8,11 +8,11 @@ import lombok.Data;
  * @description:
  */
 @Data
-public class Word {
+public class WordDomain {
     private String word;
     private Long timeStamp;
 
-    public Word(String word, long currentTimeMillis) {
+    public WordDomain(String word, long currentTimeMillis) {
         this.word = word;
         this.timeStamp = currentTimeMillis;
     }
