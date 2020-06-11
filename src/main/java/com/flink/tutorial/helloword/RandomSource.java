@@ -26,7 +26,8 @@ public class RandomSource extends RichSourceFunction<String> {
     public void run(SourceContext<String> sourceContext) throws Exception {
         for (int i = 0 ; i < 1000 ; i ++){
             Thread.sleep(100);
-            sourceContext.collect(data.get(i%data.size()));
+            //sourceContext.collect(data.get(i%data.size()));
+            sourceContext.collect(data.get(0));
         }
     }
 
